@@ -83,6 +83,9 @@ inner join glavnatablica on povijestkretanjanaloga.glavnatablica = glavnatablica
 inner join radnik on povijestkretanjanaloga.radnik=radnik.id
 where povijestkretanjanaloga.status='izrezano';
 
+select g.partnumber, r.ime, r.prezime, g.partnumber, p.datum,p.kolicina from povijestkretanjanaloga p
+inner join glavnatablica g on p.glavnatablica =g.id
+inner join radnik r on p.radnik=r.id;
 
 
 
